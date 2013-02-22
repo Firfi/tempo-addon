@@ -23,7 +23,6 @@
             var percent = parseFloat((local/total*100).toFixed(2));
             localsumtd.after(jQuery('<td/>').text(percent));
         });
-        console.warn(percentTdIndex)
         if (run) {
 
             // most hight head and three foots
