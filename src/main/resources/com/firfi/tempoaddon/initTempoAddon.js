@@ -6,7 +6,7 @@
         jQuery('.tempo-timesheet-table .sublog').each( function(k, v) {
             run = true;
             var mainclass = "mainlog"+/sublog(-[0-9]*)/.exec(v.className)[1];
-            var total = jQuery(jQuery("#"+mainclass + " .userTotal")[0]).text().trim();
+            var total = jQuery(jQuery("#"+mainclass).find(".userTotal, .hours-completed")[0]).text().trim();
             var tds = jQuery(this).find('td');
             // we should find first 'hours' td and remember its position for headers corrections
             var localsumtd = undefined;
